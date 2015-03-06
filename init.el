@@ -85,7 +85,9 @@
 ;; Clojure
 (progn
   (add-hook 'cider-mode-hook #'eldoc-mode)
-  (setq nrepl-log-messages t))
+  (setq nrepl-log-messages t)
+  (add-hook 'cider-repl-mode-hook 'paredit-mode)
+  (add-hook 'cider-mode-hook 'paredit-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Javascripty stuff
