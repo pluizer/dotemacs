@@ -102,8 +102,12 @@
   (tss-config-default))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Version control
+;; Projects
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Projectile
+(progn
+  (projectile-global-mode))
 
 ;; Magit
 (progn
