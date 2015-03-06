@@ -54,6 +54,10 @@
 ;; C - C++y stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; Indentation
+(progn
+  (setq c-default-style "linux"
+        c-basic-offset 8))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Lispy stuff
@@ -102,7 +106,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Magit
-
 (progn
   (global-set-key (kbd "<f9>") 'magit-status))
 
